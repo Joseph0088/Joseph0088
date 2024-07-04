@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!--a validator-->
+        <!-- javascript validator link http://www.jslint.com/ -->
+       <!--<a href='http://validator.w3.org/check?uri=referer'>html5</a>--> 
+        <!--css validator -->
+      <!--<a href=http://jigsaw.w3.org/css-validator/check/referer>css3</a>
+-->  
+    <head lang=en >
+          <meta charset="UTF-8">
+                      <title>ZAMBIAN STUDENTS ASSOCIATION IN MOROCCO</title>
+                           <link href="Zasam.css" rel="stylesheet" type="text/css">
+                           <!-- Add icon library -->
+                           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                           <!--description for the search engine -->
+                           <meta name=Zasam content="Zasam learning platform">
+                           <meta name="viewpoint" content="width=width-device, intial-scale=1.0">
+                           <script  scr="zasam.js"></script>
+                           <style>
+
+                              a{
+                                text-decoration: none;
+                              }
+                              .enrollButton{
+                              width: 100px;
+                              height: 30px;
+                              color:rgb(255,255,255);
+                              background-color: rgb(100, 247, 100);
+                              border-radius: 5px;
+                              margin-top: 8px;
+
+                              }
+                              .courseIconBox{
+                               width: 300px;
+                               height: 300px;
+                               border: 1px solid  black;
+                               border-radius: 5px 5px 5px 5px;
+                               padding:20px 40px 40px 20px;
+                               margin-left:30px ;
+                               margin-top: 5px;
+                               display: inline-flex;
+                               background-color:cornsilk;
+                               
+                              }
+                              
+
+                              .displayZone4,.displayZone5,.displayZone6,.displayZone7{
+                               width: 300px;
+                               height: 300px;
+                               border: 1px solid  black;
+                               border-radius: 5px 5px 5px 5px;
+                               padding:20px;
+                               margin-left:30px ;
+                               margin-top: 5px;
+                               display: inline-flex;
+                               background-color: aqua;
+                               
+                              }
+
+                              .displayZone-A{
+                               margin-top: 500px;
+                              }
+
+                              .displayZone-B{
+                               margin-top: 70px;
+                              }
+
+                              .displayZone-C{
+                               width: 100%;
+                               height: 350px;
+                               border-radius: 5px 5px 5px 5px ;   
+                               padding-left: 200px;
+                               background-color:ivory;  
+                               margin-top:50px;
+                               
+                              }
+
+
+                              .displayZone4{
+                               background-color:yellow;
+                               margin-top:200px ;
+                              }
+                              .displayZone5{
+                                background-color:yellow;
+                               
+                              }
+                              .displayZone6{
+                                background-color:yellow;
+                              }
+                              .displayZone7{
+                                background-color:yellow;
+                              }
+
+                              .displayZone1Link,.displayZone2Link,.displayZone3Link{
+                               color:black;
+                               padding: 15px 190px 5px 170px ;
+                               font-size: 20px;
+                               margin-left: 0px;
+                               background-color: aqua;
+                               background-size: cover;
+                              }
+                              .coursesLevels{
+                               margin-top: 20px;
+
+                              }
+
+                              .footerBox{
+                                width: 18%;
+                                height: fit-content;
+                                border-radius: 5px;
+                                display: inline-block;
+                                margin:50px 5px 20px 5px ;
+                                padding: 10px;
+                                background-attachment:local;
+
+                              
+                              }
+
+                              footer a {
+                                color: #fff;
+                                padding: 5px;
+                                font-family: 'Times New Roman', Times, serif; 
+                              }
+
+                              footer h3 {
+                                 padding: 10px;
+                              }
+                              .CommonQ{
+                                width: 80%;
+                                height: auto;
+                                background-color: rgb(255,255,255);
+                                border: 1px black solid;
+                                margin-top: 40px;
+                                
+
+                              }
+
+                              .PlansContainer,.lastContainer{
+                                width: 100%;
+                                height: 300px;
+                                
+                              }
+                              .lastContainer{
+                               background-color: purple;
+                               padding: 100px;
+                              }
+
+                              .PlanBox{
+                                width: 200px;
+                                height:200px;
+                                display: inline;
+                                background-color: #55acee9a;
+                                border: 1px solid black;
+                              }
+
+                              .slidersContainer{
+                                width: 100%;
+                                height: fit-content;
+                              }
+
+ /* Style all font awesome icons */
+ .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  
+color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+
+                              * {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #555;
+  &:before, &:after {
+    box-sizing: border-box;
+  }
+}
+
+.navigation {
+	background: rgba(0,0,0,.7);
+	position: absolute;
+		top:0;
+		bottom:0;
+		left:-100%;
+	overflow: hidden;
+	transition: left 0.3s;
+	width: 100%;
+	z-index: 100;
+	h1, h1 a{
+		color: #fff;
+		width: 100%;
+		text-align: center;
+		z-index: 101;
+	}
+	h1 a{
+		display:block;
+    font-size: 40px;
+		padding: 10px 20px;
+		margin-bottom: 5px;
+		text-decoration: none;
+		transition: all .3s ease;
+		&:hover {
+			background: rgba(255,255,255,.2);
+		}
+	}
+}
+.toggle-button {
+	display: block;
+	padding: 10px;
+	position: absolute;
+		top:0;
+		left:0;
+	z-index: 101;
+
+	.wolverine {
+		display: inline-block;
+		height: 26px;
+		padding: 0px 0px;
+		cursor: pointer;
+		-webkit-user-select: none;
+		opacity: .97;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    span {
+			display:inline-block;
+			text-transform: uppercase;
+			line-height: 18px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 18px;
+			font-weight: bold;
+			color: #fff;
+			margin-left: 0px;
+			width:0px;
+			overflow:hidden;
+		}
+
+		.claws {
+			position: relative;
+				top:-2px;
+			width: 20px;
+			height: 4px;
+			background: rgb(0,0,0);
+			display:inline-block;
+
+			&:before, &:after {
+				display: block;
+				content: "";
+				height: 4px;
+				width: 20px;
+				background: rgb(0,0,0);
+				position: absolute;
+				z-index: -1;
+				-webkit-transform-origin: 50% 50%;
+				transform-origin: 50% 50%;
+				-webkit-transition: all .1s .2s,-webkit-transform .2s ease;
+				-webkit-transition-delay: ease,0s;
+				-moz-transition: all .1s .2s ease,-moz-transform .2s ease;
+				-o-transition: all .1s .2s ease,-o-transform .2s ease;
+				transition: all .1s .2s ease,transform .2s ease;
+			}  
+
+			&:before {
+				top: 8px;
+			}
+
+			&:after {
+				top: -8px;
+			}
+		}
+	}
+}
+.nav-control {
+	position: absolute;
+		left:-9999px;
+	width: 100%;
+	clip: rect(0, 0, 0, 0);
+
+	&:checked ~ .navigation {
+		left: 0;
+		opacity: 1;
+		transition: left 0.3s, opacity 0.3s;
+
+		ul li {
+			opacity: 1;
+			-webkit-transform: translateX( 0 );
+			-moz-transform: translateX( 0 );
+			-ms-transform: translateX( 0 );
+			-o-transform: translateX( 0 );
+			transform: translateX( 0 );
+		}
+	}
+	&:checked ~ .toggle-button {
+
+    .wolverine {
+
+        .claws {
+        -webkit-transition: all .1s 0s;
+        -webkit-transition-delay: ease;
+        -moz-transition: all .1s 0s ease;
+        -o-transition: all .1s 0s ease;
+        transition: all .1s 0s ease;
+        background: transparent !important;
+        z-index: 101;
+
+        &:before, &:after {
+          background: rgb(255,255,255);
+          -webkit-transition: all .1s ease,-webkit-transform .1s .2s;
+          -webkit-transition-delay: 0s,ease;
+          -moz-transition: all .1s ease,-moz-transform .1s .2s ease;
+          -o-transition: all .1s ease,-o-transform .1s .2s ease;
+          transition: all .1s ease,transform .1s .2s ease;
+          top: 0;
+          width: 20px;
+        }
+
+        &:before {
+          -webkit-transform: rotate3d(0,0,1,45deg);
+          transform: rotate3d(0,0,1,45deg);
+        }
+
+        &:after {
+          -webkit-transform: rotate3d(0,0,1,-45deg);
+          transform: rotate3d(0,0,1,-45deg);
+        }
+      }  
+    }
+  }
+}
+
+/* common asked questions style*/
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+
+/*sliders style*/
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  height: 400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+                           </style>
+
+  
+    </head>
+ 
+       <body id="mutu">
+          
+           <header class="homepageHeader">
+           
+            <!--menu bar for the home page -->
+                <input type="checkbox" id="nav-control" class="nav-control" >
+                    <label for="nav-control" class="toggle-button">
+                        <div class="wolverine">
+                          <div class="claws"></div> <span>menu</span>
+                        </div>
+                    </label>
+                <nav class="navigation">
+
+                                  <h1><a href="/home/joseph/NEW_PROJECT/root-files/index_log.html">sign in </a></h1>
+                                  <h1><a href="/home/joseph/NEW_PROJECT/root-files/indix_signup.html">sign up</a></h1>
+                                  <h1><a href="/home/joseph/NEW_PROJECT/root-files/unza.html"> Zambian Education System</a></h1>
+                                  <h1><a href="/home/joseph/NEW_PROJECT/root-files/ZASAM.html" > French Education System </a></h1>
+                                  <h1><a href="/home/joseph/NEW_PROJECT/root-files/SkillsForAll.html">skills for all </a></h3>
+                                  <h1><a href="#">Contact</a></h3>
+      
+                </nav>
+
+
+
+                <div class="topnav">
+                           <h1 style="font-size: 40px; font-weight:bolder; margin-top:50px; color:#0000ff;"> WELCOME TO BBBBBB!! </h1> 
+                           <p style="text-align: center;font-weight:bolder; color:rgb(255, 0, 0);"> Education  is one thing no one can take away from you </br> Elin Nordegren</p>      
+                            
+                  </header>
+      
+                  <!--boxes to show the available course-->
+                       <div class="CoursesList">
+
+                                 <div class="displayZone-A" >
+                                       <h1>Explore Courses </h1>
+                                 </div>
+                           
+                                 <div class="courseIconBox" >
+                                  <p>
+                                     <img src="/home/joseph/NEW_PROJECT/src-files/math!.jpg" style=" width:100%; height:150px; margin-left: 10px; border-radius:5px 5px 5px 5px;" /></br>
+                                      Basics of Calculus </br>
+                                      <button  class="enrollButton"> Enroll</button>
+                                  </p>
+
+                  
+                                 </div>
+                        
+                                 <div class="courseIconBox" >
+                                  <p>
+                                     <img src="/home/joseph/NEW_PROJECT/src-files/IT.jpg" style=" width:100%; height:150px; margin-left: 10px; border-radius:5px 5px 5px 5px;" /></br>
+                                     Algothsm  and Programming</br>
+                                     <button class="enrollButton">Enroll</button>
+                                  </p>
+
+                  
+                                 </div>
+                        
+                                 <div class="courseIconBox" >
+                                  <p>
+                                     <img src="/home/joseph/NEW_PROJECT/src-files/BIO.jpg" style=" width:100%; height:150px; margin-left: 10px; border-radius:5px 5px 5px 5px;" /></br>
+                                      Cellular Biology</br>
+                                      <button class="enrollButton">Enroll</button>
+                                  </p>
+
+                  
+                                 </div>
+                        
+                                 <div class="courseIconBox" >
+                                  <p>
+                                     <img src="/home/joseph/NEW_PROJECT/src-files/Language.jpg" style=" width:100%; height:150px; margin-left: 10px; border-radius:5px 5px 5px 5px;" /></br>
+                                     A1-A2 Grammar in English</br>
+                                     <button class="enrollButton">Enroll</button>
+                                  </p>
+
+                  
+                                 </div>
+                                 <!--link to the course list page-->
+                                 <div>
+                                        </br><a href="/home/joseph/NEW_PROJECT/root-files/" style="margin-top: 100px; border: 2px solid black; border-radius: 5px; background-color: rgb(0, 204, 255);"> See more </a>
+                                 </div>
+                                 <div class="displayZone-B" >
+                                          <h1><strong>Invest in your Career today </strong></h1>
+                                          <p>No other investment yields as great a  return as the investment in education. An educated workforce is the foundation of every community and the future of every economy</br> <emp>Brand Henry </emp>  </p>
+                                 </div>
+
+
+                                 <!--Benefits structure -->
+
+                                 <div class="displayZone4" >
+                                       <p> <img src="/home/joseph/NEW_PROJECT/src-files/A4.jpg" style=" width:100%; height:150px; margin-left: 10px; border-radius:5px 5px 5px 5px;" /></br>
+                                        <strong>Learning with experts</strong></br>
+                                        Learning with Highly qualified Tutors and Fellow students </p>   
+                                          
+                                 </div>
+                        
+                                 <div class="displayZone4">
+                                      <p>
+                                        <img src="/home/joseph/NEW_PROJECT/src-files/pregnantWoman.jpg" style=" width:100%; height:150px; margin-left: 10px; border-radius:5px 5px 5px 5px;" /></br>
+                                        <strong>Flexible</strong> <br>learn anywhere,anytime and anyhow </p>    
+                                          
+                                 </div>
+
+                                 <div class="displayZone4">
+                                       
+                                      <p>
+                                        <img src="/home/joseph/NEW_PROJECT/src-files/webdesign.jpg" style=" width:100%; height:150px; margin-left: 10px; border-radius:5px 5px 5px 5px;" /></br>
+                                        <strong>showcase your creativity</strong> </p>
+                                          
+                                 </div>
+                                
+                                 <div class="displayZone4">
+                                  <p>
+                                  <img src="/home/joseph/NEW_PROJECT/src-files/savingPig.jpg" style=" width:100%; height:150px; margin-left: 10px; border-radius:5px 5px 5px 5px;" /></br>
+                                      <strong>Pay less and Learn more</strong>  </p>   
+                                 </div>
+
+                                <!--link to the soft skills  list page-->
+                                 <div>
+                                        </br><a href="/home/joseph/NEW_PROJECT/root-files/" style="margin-top: 100px; border: 2px solid black; border-radius: 5px; background-color: rgb(0, 204, 255);"> See more </a>
+                                 </div>
+                                
+
+                                 <!--Commonly asked question Structure -->
+                                 <div class="displayZone-C">
+                                     <h2> commonly asked questions</h2>
+                                  <ul id="myUL" class="CommonQ" >
+                                    <li><span class="caret">Why Learning with us </span>
+                                      <ul class="nested">
+                                        <p>A tree view represents a hierarchical view of information, where each item can have a number of subitems.A tree view represents a hierarchical view of information, where each item can have a number of subitems.A tree view represents a hierarchical view of information, where each item can have a number of subitems.A tree view represents a hierarchical view of information, where each item can have a number of subitems.A tree view represents a hierarchical view of information, where each item can have a number of subitems.</p>                                        
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                  <ul id="myUL" class="CommonQ">
+                                    <li><span class="caret">Do i earn certificate upon completion? </span>
+                                      <ul class="nested">
+                                        <p>A tree view represents a hierarchical view of information, where each item can have a number of subitems.</p>                                        
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                  <ul id="myUL" class="CommonQ">
+                                    <li><span class="caret">Who's these courses For</span>
+                                      <ul class="nested">
+                                        <p>A tree view represents a hierarchical view of information, where each item can have a number of subitems.</p>                                        
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                  <ul id="myUL" class="CommonQ">
+                                    <li><span class="caret">Beverages</span>
+                                      <ul class="nested">
+                                        <p>A tree view represents a hierarchical view of information, where each item can have a number of subitems.</p>                                        
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                  <ul id="myUL" class="CommonQ">
+                                    <li><span class="caret">Beverages</span>
+                                      <ul class="nested">
+                                        <p>A tree view represents a hierarchical view of information, where each item can have a number of subitems.</p>                                        
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                  <ul id="myUL" class="CommonQ">
+                                    <li><span class="caret">Beverages</span>
+                                      <ul class="nested">
+                                        <p>A tree view represents a hierarchical view of information, where each item can have a number of subitems.</p>                                        
+                                      </ul>
+                                    </li>
+                                  </ul>
+
+                                   <!--script starts here -->
+                                   <script>
+                                    var toggler = document.getElementsByClassName("caret");
+                                    var i;
+                                    
+                                    for (i = 0; i < toggler.length; i++) {
+                                      toggler[i].addEventListener("click", function() {
+                                        this.parentElement.querySelector(".nested").classList.toggle("active");
+                                        this.classList.toggle("caret-down");
+                                      });
+                                    }
+                                    </script>
+                                    
+                                                                    
+                                 </div>
+                          <!--Soft skills structure -->        
+                         <div class="displayZone-D" >
+                                  <h1>Discover a skill </h1>
+                         </div>
+                      
+                            <div class="courseIconBox" >
+                             <p>
+                                <img src="/home/joseph/NEW_PROJECT/src-files/FARMER.jpeg" style=" width:100%; height:150px; margin-left: 10px; border-radius:5px 5px 5px 5px;" /></br>
+                                 Agriculcure and Aquaculture </br>
+                                 <button  class="enrollButton"> Learn more </button>
+                             </p>
+
+             
+                            </div>
+                   
+                            <div class="courseIconBox" >
+                             <p>
+                                <img src="/home/joseph/NEW_PROJECT/src-files/Budget-Image.png" style=" width:100%; height:150px; margin-left: 10px; border-radius:5px 5px 5px 5px;" /></br>
+                                Be an expert in Finances  and Learn  About Taxes </br>
+                                <button class="enrollButton">Learn more</button>
+                             </p>
+
+             
+                            </div>
+                   
+                            <div class="courseIconBox" >
+                             <p>
+                                <img src="/home/joseph/NEW_PROJECT/src-files/Doctor.jpg" style=" width:240px; height:150px; margin-left: 10px; border-radius:5px 5px 5px 5px;" /></br>
+                                 MY health My wealth</br>
+                                 <button class="enrollButton"> Learn More </button>
+                             </p>
+
+             
+                            </div>
+                   
+                            <div class="courseIconBox" >
+                             <p>
+                                <img src="/home/joseph/NEW_PROJECT/src-files/LearnZamLang.png" style=" width:100%; height:150px; margin-left: 10px; border-radius:5px 5px 5px 5px;" /></br>
+                                Learn Zambian Languages </br> 
+                                <button class="enrollButton"> Learn more </button>
+                             </p>
+                            </div>
+                            <div class="PlansContainer">
+
+                                  <div class="PlanBox">
+                                        <h2>economic Plan</h2>
+                                        <p>
+                                          <ul>$ 0.2 Monthly</ul>
+                                          <ul>$ 10 Annualy</ul>
+                                        </p>
+                                  </div>
+
+                                  <div class="PlanBox">
+                                       <h2>Premiem Plan </h2>
+                                       <p>
+                                         <ul>$ 2.24 Monthly</ul>
+                                         <ul>$   21 Annualy</ul>
+                                       </p>
+                                  </div>
+
+                                  <div class="PlanBox">
+                                        <h2>Pro Plan</h2>
+                                        <p>
+                                          <ul>$  3.99 Monthly</ul>
+                                          <ul>$ 34.25 Annualy</ul>
+                                        </p>
+                                  </div>
+                            </div>
+
+                          <div class="slidersContainer">
+                            <div class="slideshow-container">
+
+                              <div class="mySlides fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="/home/joseph/NEW_PROJECT/src-files/math!.jpg" style="width:100%; height: 400px;">
+                                <div class="text">Caption Text</div>
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="/home/joseph/NEW_PROJECT/src-files/1.jpg" style="width:100%; height: 400px;">
+                                <div class="text">Caption Two</div>
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="/home/joseph/NEW_PROJECT/src-files/A1.jpg" style="width:100%; height: 400px;">
+                                <div class="text">Caption Three</div>
+                              </div>
+                              
+                              </div>
+                              <br>
+                              
+                              <div style="text-align:center">
+                                <span class="dot"></span> 
+                                <span class="dot"></span> 
+                                <span class="dot"></span> 
+                              </div>
+                              
+<!--Sliedrs Script-->
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+                          </div>
+
+                            <div class="lastContainer">
+                                 <p style="color: white;">
+                                  Get started with Bla Bla Bla, and earn competence,graduate with a project that will prove your competence beyond measure  
+                                 </p>
+                            </div>
+                       </div>
+                      
+                      
+       <body>
+      <footer>
+        <div class="footerBox">
+          <h3> Contact us </h3>
+            
+               <!-- Add font awesome icons -->
+                     <a href="#" class="fa fa-google"></a>
+                     <a href="https://www.facebook.com/profile.php?id=100075833419827" class="fa fa-facebook"></a>
+                     <a href="#" class="fa fa-twitter"></a>
+                     <a href="#" class="fa fa-linkedin"></a>
+                     <a href="https://www.youtu.be/skwdcPStVX4" class="fa fa-youtube"></a>
+                     <a href="#" class="fa fa-pinterest"></a></br>
+                     <a href="#" >yes</a></br>
+                     <a href="#" >yes</a></br>
+                     <a href="#" >yes</a></br>
+                     <a href="#" >yes</a></br>
+
+
+
+            
+             
+
+        </div>
+        <div class="footerBox">
+          <h3> Pre and Primary</h3>
+            <ul>
+              <ul> <a href="#" >kids math</a></ul>
+              <ul> <a href="#" >kids science</a></ul>
+              <ul> <a href="#" >kids social science</a></ul>
+              <ul> <a href="#" >kids languages</a></ul>
+              <ul> <a href="#" >kids creative</a></ul>
+              <ul> <a href="#" >Primary math</a></ul>
+              <ul> <a href="#" >Primary science</a></ul>
+              <ul> <a href="#" >Primary social Science</a></ul>
+              <ul> <a href="#" >Primary languages</a></ul>
+              <ul> <a href="#" >Primary Creative </a></ul>
+              <ul> <a href="#" >Spacial Papers</a></ul>
+              
+            </ul>
+        </div>
+        <div class="footerBox">
+          <h3>High School</h3>
+          
+          <ul> <a href="#" >Junior secondary Math</a></ul>
+          <ul> <a href="#" >Junior secondary Science</a></ul>
+          <ul> <a href="#" >Junior secondary social sciences</a></ul>
+          <ul> <a href="#" >Junior secondary IT</a> </ul>
+          <ul> <a href="#" >Junior secondary D & T</a></ul>
+          <ul> <a href="#" >Junior secondary Business</a></ul>
+          <ul> <a href="#" >Senior secondary Math</a></ul>
+          <ul> <a href="#" >Senior secondary Biology</a></ul>
+          <ul> <a href="#" >Senior secondary Agriculture</a></ul>
+          <ul> <a href="#" >Senior secondary Physics</a></ul>
+          <ul> <a href="#" >Senior secondary Chemistry </a></ul>
+        </div>
+        <div class="footerBox">
+          <h3> University and college </h3>
+          
+            <ul> <a href="#" >Mathematics </a></ul>
+            <ul> <a href="#" >Biology</a></ul>
+            <ul> <a href="#" >Chemistry</a></ul>
+            <ul> <a href="#" >Physics</a></ul>
+            <ul> <a href="#" >Information and Technology</a></ul>
+            <ul> <a href="#" > French </a></ul>
+            <ul> <a href="#" >English</a></ul>
+            <ul> <a href="#" >Econmics</a></ul>
+            <ul> <a href="#" >Self Development</a></ul>
+            <ul> <a href="#" >Arts and Design </a></ul>
+            <ul> <a href="#" >Soft Skills </a></ul>              
+          
+        </div>
+        
+      </footer>
+
+            
+    
+</html>

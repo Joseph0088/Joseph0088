@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>sign_up</title>  
+         <meta>
+         <link href="index_login.css" rel="stylesheet" type="text/css">     
+         <!--<script  scr="zasam.js"></script>-->
+         <!--<meta name="viewpoint" content="width=width-device, intial-scale=1.0">-->
+    </head>
+
+    <body>
+      <header>
+        
+      </header>
+      
+      <main>
+        <div>
+            <div id="form1">
+                  <h4>SIGN UP</h4>
+                 <form id="userForm" >
+                     <input type = "text" id = "userName" name ="userName" placeholder = "name " required><br>
+                     <input type = "text" id = "lastName" placeholder = "surname " required>
+                     <br>
+                     <select id="gender">
+                        <option> Male</option>
+                        <option> Female</option>
+                        
+                      <select required>
+                        <br>
+                     <input type = "number" id = "age" name="age" placeholder = "Age" required><br>
+                     <input type="number" id = "phone" name="phone" placeholder="7123456789" required><br>
+                     <input type = "text" id = "email" name="email" placeholder = "name123.gmail.com" required><br>
+                     <select  id="occupation">
+                        <option>select occupation</option>
+                        <option> TEACHER </option>
+                        <option> STUDENT </option>
+                        <option> OTHERS </option>
+                      <select required>
+                        <br>
+                     <select id = "country">
+                        <option>select Nationality</option>
+                        <option> ZAMBIA</option>
+                        <option> MOROCCO</option>
+                        <option> RUSSIA</option>
+                      <select required>
+
+                     <br>
+                     <p> Profile picture</p>
+                     <form action="/action_page.php">
+                            <input type="file" id="myFile" name="photo" required>
+                            <input type="submit" onClick="processFormData()" >
+                     </form>
+                     
+              </form>
+
+            </div>
+        </div>
+      </main>
+    </body>
+    <footer>
+
+    </footer>
+</html>

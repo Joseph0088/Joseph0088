@@ -1,0 +1,410 @@
+<!Doctype html/>
+<html>
+    <head>
+        <title>Fst fichier </title>
+        <meta />
+
+         <style>
+               .Header{
+                width:100%;
+                height:200px;  
+                background-color:black;
+                padding:20px;
+               }
+               .HearderLinks{
+                width:100%;
+                height:50px;  
+                background-color:black;
+                padding:20px;
+                border-top:5px solid white;
+                
+                
+               }
+               header h1{
+                  font-size:32px; 
+                  text-align: center;
+                  color:white;
+               }
+               .HearderLinks a{
+                  background: yellow;
+                  color: black;
+                  border-radius:5px;
+                  font-size:20px;
+                  padding:2px;
+                  text-decoration:none; 
+                  margin:20px;
+                  border: 1px solid white;
+               }
+               .selectorBox{
+                   float:right;
+                   margin-right:40px;
+               }
+               
+               #SelectOption,#SelectOption option{
+                width:300px;
+                height:40px;
+               }
+               
+               
+                 ol li{
+                 width:;
+                 height:30px;
+                 border: 1px solid black;
+                 margin-top:5px;
+                 border-radius:5px;
+                 padding:0px 0px 0px 0px;
+                 background-color:black;
+                 
+               }
+               li a{
+                 font-size: 18px;
+                 text-decoration:none;
+                 color:white;
+                 background-color: black;
+                 padding:0px 120px 8px 120px;
+               }
+               
+               main{
+                  width: 70%;
+                  background-blend-mode: luminosity;
+                  margin-left:15%;
+               }
+
+               table{
+                width: 100%;
+                height: 500px;
+                background-color:rgb(250, 250, 250);
+                border: 2px solid black;
+               }
+
+               .Container-Matiere{
+                width: fit-content;
+                height:fit-content;
+                background-color:rgb(255, 235, 205, 0.616);
+                display: inline; 
+              }
+               .Matiere{
+                width: 70%;
+                height:fit-content;
+                background-color:rgba(250,250,250);
+                padding: 2% 0% 0% 10%;
+                margin: 2% 0% 0% 10% ;
+               }
+
+
+               td{
+                  width: 33.333%;
+                  height: fit-content;
+                  border-left: 2px solid black;
+                  border-bottom: 2px solid black;
+                  padding-left: 10px;
+               }
+               tr{
+                  width: 70px;
+                  height: 30px;
+
+               }
+               .columnTitle{
+               background-color:rgba(0, 0, 0, 0.226);
+               }
+
+               .download-imagesize{
+                  width:  ;
+                  height: ;
+               }
+         </style>
+
+    </head>
+    <body>
+        <header>
+        
+        
+        
+        
+        
+        
+               <div class="Header"> 
+                           <h1> WRITE YOUR HEADING HERE </h1>
+                           <p></p>
+               </div>
+               <div class="HearderLinks" >
+                     <a href="/home/joseph/NEW_PROJECT/src-files/"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+</svg>  previous page </a>
+                     <a href="/home/joseph/NEW_PROJECT/root-files/homepage.html">Home</a>
+      <div class="selectorBox">        
+          
+           <select  name="forma" id='SelectOption'>
+               <option>Exercice</option>
+               <option value="TD1"><a href="/home/joseph/root-files/homepage.html" >TD1 </a></option>
+               <option value="TD2"><a href="/home/joseph/root-files/homepage.html" >TD2 </a></option>
+               <option value="TD3"><a href="/home/joseph/root-files/homepage.html" >TD3 </a></option>
+               <option value="TD4"><a href="/home/joseph/root-files/homepage.html" >TD4 </a></option>
+               <option value="TD5"><a href="/home/joseph/root-files/homepage.html" >TD5 </a></option>
+            </select>
+            
+            <script>
+                  document.getElementById('SelectOption').addEventListener('change', function() {
+                    val = $( "#SelectOption" ).val();
+                    
+                    console.log(val)
+                    if(val === 'TD1') {
+                          window.open('TD1.php','/home/joseph/root-files/homepage.html');
+                    }
+                   if(val === 'TD2') {
+                          window.open('TD2.php', '/home/joseph/root-files/homepage.html');
+                   }
+                   if (val === 'TD3') {
+                         window.open('TD3.php', '/home/joseph/root-files/homepage.html');
+                 }
+                 if (val === 'TD4') {
+                         window.open('TD4.php', '/home/joseph/root-files/homepage.html');
+                 }
+                 if (val === 'TD5') {
+                         window.open('TD5.php', '/home/joseph/root-files/homepage.html');
+                 }
+                 });
+S
+            </script>
+      </div>       
+               </div>
+        </header>
+      
+        <main>
+            <aside>
+                  <div  class="Container-Matiere"> 
+                       
+                    
+                         
+                            <div class="Matiere"> 
+                                <h2>Tableau des Matieres de MIP</h2>                             
+                                
+                            <p>
+                                appuie sur l'image to telecharge polycopie pdf
+                                
+                                <ol>
+                                    <li><a href="/home/joseph/NEW_PROJECT/root-files/Introduction to Computer Science.pdf" download> Analyse 1 </a></li>
+                                    <li><a href="#blank" download> Analyse 2</a></li>
+                                    <li><a href="#blank" download> Analyse 3</a></li>
+                                    <li><a href="#blank" download> Analyse 4</a></li>
+                                    <li><a href="#blank" download> Analyse Numerique</a></li>
+                                    <li><a href="#blank" download>Algebra 1</a></li>
+                                    <li><a href="#blank" download>Algebre 2</a></li>
+                                    <li><a href="#blank" download>informatique et Programmation 1 </a></li>
+                                    <li><a href="#blank" download>informatique Programmation 2</a></li>
+                                    <li><a href="#blank" download>Programmation et Structure de donne</a></li>
+                                    <li><a href="#blank" download>Base de donne </a></li>
+                                    <li><a href="#blank" download>Thermodynamique </a></li>
+                                    <li><a href="#blank" download>Mecamique du point materiels</a></li>
+                                    <li><a href="#blank" download>Mecanique du solide </a></li>
+                                    <li><a href="#blank" download>Mecanique Quantique </a></li>
+                                    <li><a href="#blank" download> Chimie Structure des Materiels</a></li>
+                                    <li><a href="#blank" download>Chimie Atomistique </a></li>
+                                    <li><a href="#blank" download>Techinique de communication 1</a></li>
+                                    <li><a href="#blank" download>Techinique de communication 2</a></li>
+                                    <li><a href="#blank" download>Techinique de communication 3</a></li>
+                                    <li><a href="#blank" download>Electicite</a></li>
+                                    <li><a href="#blank" download>Electomagnetisme</a></li>
+                                    <li><a href="#blank" download>Circuits et Electroniques </a></li>
+                                    <li><a href="#blank" download>Probabilite et statistique </a></li>
+                                
+                                </ol>
+                            </p>
+                            </div>
+                            <div class="Matiere">
+                                <h2>Tableau des Matieres de BCG</h2>
+                            <p>
+                              appuie sur l'image to telecharge polycopie pdf 
+                                <ol>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+                                    <li><a href="#blank" download><img src="/home/joseph/NEW_PROJECT/scr-files/1.jpg" alt="" name="" class="download-imagesize"/ ></a></li>
+
+                                </ol>
+                            </p>
+                            </div>
+                        
+                        
+                  </div>
+            </aside>
+            
+            	
+	             <article>
+            <h2>Tableau des Parcours Licence</h2>
+            
+                  <p> </p>
+                  <table>
+                
+                     <tr>
+                        <th class="columnTitle"></th>
+                        <td class="columnTitle">MIP</td>
+                        <td class="columnTitle">BCG</td>
+                        
+                     </tr>
+                
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td>Génie des Télécommunications</td>
+                        <td>Analyses Biologiques et Contrôle Qualité</td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td>Génie Électrique et Informatique Industrielle</td>
+                        <td>Technologies Biomédicales</td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td>Informatique, Réseau et Multimédia</td>
+                        <td>Techniques d'Analyse et Contrôle Qualité</td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td>Mathématiques Appliquées</td>
+                        <td>Chimie Appliquée</td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td>Physique Appliquée</td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td>Génie Mécanique Physique</td>
+                        <td>Génie de l'Eau et de l'Environnement</td>
+                     </tr>
+                
+                  </table>
+                  
+                  <h2>Tableau des Parcours Master </h2>
+            
+                  <p> </p>
+                  
+                  <table>
+                
+                     <tr>
+                        <th class="columnTitle"></th>
+                        <td class="columnTitle">MIP</td>
+                        <td class="columnTitle">BCG</td>                        
+                     </tr>
+                
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td>Ingénierie des Systèmes Embarqués, Réseaux et Télécommunications (ISERT)</td>
+                        <td>Management de la Qualité, de la Sécurité et de l’Environnement (MQSE)</td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td></td>
+                        <td>Management de la Qualité et Sécurité des Aliments (MQSA)</td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td></td>
+                        <td>Sciences et Gestion de l'Environnement (SGE)</td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td></td>
+                        <td>Physico Chimie et Analyse des Matériaux (PCAM)</td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td></td>
+                        <td>Microbiologie Appliquée et Génie-Biologique (MAGBio)</td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td></td>
+                        <td>Ingénierie et Physique des Matériaux Avancés (IPMA)</td>
+                     </tr>
+                
+                  </table>
+       <h2>Tableau des Parcours Cycle Inginiere</h2>
+
+                  <p> </p>
+                  <table>
+                
+                     <tr>
+                        <th class="columnTitle"></th>
+                        <td class="columnTitle">MIP</td>
+                        <td class="columnTitle">BCG</td>                        
+                     </tr>
+                
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td>Génie Eléctrique et Télécommunications (GET)</td>
+                        <td>Génie des Procédés et d'Environnement (GPE)</td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td>Ingénierie Logicielle et Intégration des Systèmes Informatiques (ILISI)</td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td>Génie Mathématique et Informatique (GMI)</td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td>Génie Énergétique (GE)</td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        
+                        <th><li></li></th>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                
+                  </table>
+       
+            </article>
+           
+        </main>
+    </body>
+</html>

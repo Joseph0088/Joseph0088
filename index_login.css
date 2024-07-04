@@ -1,0 +1,94 @@
+*{
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+
+    width: 100%;
+    height:;
+    }
+
+
+.middlepane{
+    
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 350px;
+    height: 450px;
+    padding: 70px;
+    padding-top:100px;
+    border: 1px solid black;
+    position: flex;
+    float: center;
+}
+
+.downpane{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    width: 350px;
+    height: 50px;
+    padding: 60px 20px 60px 20px;
+    
+    padding-top:10px;
+    border: 1px solid black;
+    position: flex;
+    float: center;
+}
+
+.brand{
+    font-family:serif;
+    text-align: center;
+}
+button{
+    background-color: aqua;
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 50px;
+}
+.particular,.password {
+    width: 250px;
+    height: 45px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+span{
+    margin-top: 5px;
+    padding: 5px 3px 5px 3px;
+}
+
+/* sign up form*/
+
+#form1{
+  border: 1px solid black;
+  width: 700px;
+  height: 700px;
+  margin-left:20%;
+  margin-right:20%;
+  margin-top:45px;
+  background-image:url(/home/joseph/NEW_PROJECT/src-files/back_img.jpg)
+}
+
+#userForm{
+   padding:50px 70px 50px 70px  
+}
+
+#userName,#lastName,#email,#phone,#age,#country,#occupation{
+   width: 150px;
+   height:50px;
+   border-radius: 10px;   
+   padding:10px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+div h4{
+   text-align: center;
+   font-size: 30px;
+   color: white;
+   font-family: ;
+}
+div p{
+    color: white;
+}
