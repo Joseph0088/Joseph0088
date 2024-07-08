@@ -1,0 +1,104 @@
+/*The ZES and FES */
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+ main{
+    width: 70%;
+    height:100% ;
+    margin-left:15%; 
+    background-color: rgba(8, 8, 8, 0.212);
+    margin-top: 20%;
+  }
+
+  footer{
+    width:100%;
+    height:700px;
+    background-image:url(/home/joseph/NEW_PROJECT/src-files/back_img.jpg);
+ }
+
+  article h3, article h2{
+     padding-left:20px ;
+     text-decoration: aliceblue;
+     text-shadow: 4px;
+     font-weight:bolder;
+     font-family:'Times New Roman', Times, serif;
+  }
+   
+  header h1{
+    width: 100%;
+    text-align: center;
+    text-decoration: aliceblue;
+    text-shadow: 4px;
+    font-weight:bolder;
+    font-family:'Times New Roman', Times, serif; 
+  }
+
+  article p{
+    padding-left: 10px;
+  }
+
+  header{
+    width: 100%;
+    height:200px;
+    margin-top:0;
+    background-color: blueviolet;
+  }
+
+  .links_MENU a{
+     display:inline-block;
+     float: right;
+  }
+  .Nav-Links{
+    width:10%; 
+    padding:10px ;
+    background-color: black;
+    color:white;
+  }
+  ol,ul{
+    margin-left: 5%;
+    background-color: gainsboro;
+    color: royalblue;
+    list-style-position: inside;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  ol.a,ul.a{
+    color: white;
+    text-decoration: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover,.active {
+    background-color: white;
+  }
+ .active{
+    width:10%; 
+    padding:10px ;
+    background-color: black;
+    color:white;
+    
+ }
+ 
+  img[alt="ZESlogo"],img[alt="FESlogo"],img[alt="SFAlogo"]{
+    width: 70px;
+    height: 70px;
+    border-radius:100%;
+    margin-left: 2%;
+    margin-top: 50px;
+  }
+
+  #Notes,#Reviews{
+    display: none;
+  }
+  decriptiveParaGraph{
+    padding: 15px;
+  }
+
+
+
+  
