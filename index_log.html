@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta charset="utf-8">
+    <title>login page</title>
+    <meta name="viewpoint" content="width=width-device, intial-scale=1.0">
+    <link href="index_login.css" rel="stylesheet" type="text/css">
+    <script  scr="zasam.js"></script>
+    <style>
+           
+    </style>
+    
+</head>
+
+<body>
+          <!--login-->
+          <div>
+   
+          </div>
+
+          <div>
+
+            <?php
+    // Initialize session
+    session_start();
+
+    // Define variables and initialize with empty values
+    $username = $password = "";
+    $username_err = $password_err = $login_err = "";
+
+    // Database configuration
+    $servername = "localhost";
+    $username_db = "root";
+    $password_db = ""; // Use your own password
+    $dbname = "user_data";
+
+    // Create a connection
+    $conn = new mysqli($servername, $username_db, $password_db, $dbname);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Processing form data when form is submitted
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Check if username is empty
+        if (empty(trim($_POST["username"]))) {
+            $username_err = "Please enter username.";
+        } else {
+            $username = trim($_POST["username"]);
+        }
+
+        // Check if password is empty
+        if (empty(trim($_POST["password"]))) {
+            $password_err = "Please enter your password.";
+        } else {
+            $password = trim($_POST["password"]);
+        }
+
+        // Validate credentials
+        if (empty($username_err) && empty($password_err)) {
+            // Prepare a select statement
+            $sql = "SELECT id, username, password FROM users WHERE username = ?";
+            if ($stmt = $conn->prepare($sql)) {
+                // Bind variables to the prepared statement as parameters
+                $stmt->bind_param("s", $param_username);
+
+                // Set parameters
+                $param_username = $username;
+
+                // Attempt to execute the prepared statement
+                if ($stmt->execute()) {
+                    // Store result
+                    $stmt->store_result();
+
+                    // Check if username exists, if yes then verify password
+                    if ($stmt->num_rows == 1) {
+                        // Bind result variables
+                        $stmt->bind_result($id, $username, $hashed_password);
+                        if ($stmt->fetch()) {
+                            if (password_verify($password, $hashed_password)) {
+                                // Password is correct, so start a new session
+                                session_start();
+
+                                // Store data in session variables
+                                $_SESSION["loggedin"] = true;
+                                $_SESSION["id"] = $id;
+                                $_SESSION["username"] = $username;
+
+                                // Redirect user to welcome page
+                                header("location: welcome.php");
+                            } else {
+                                // Password is not valid, display a generic error message
+                                $login_err = "Invalid username or password.";
+                            }
+                        }
+                    } else {
+                        // Username doesn't exist, display a generic error message
+                        $login_err = "Invalid username or password.";
+                    }
+                } else {
+                    echo "Oops! Something went wrong. Please try again later.";
+                }
+
+                // Close statement
+                $stmt->close();
+            }
+        }
+
+        // Close connection
+        $conn->close();
+    }
+    ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            
+                <div class="container">
+                  
+                               
+                                
+                                <div class="middlepane">
+                                    <h1 class="brand">ZASAM</h1>
+                                    
+                                      <input class="particular" type="text" id="usrname"  name="usrname" value="" placeholder="Enter Username" required>
+                                      <span><?php echo $username_err; ?></span>
+                                      <br>
+                                      <input class="password" type="password" id="psw" placeholder="Enter Password" name="psw" required>
+                                      <span><?php echo $password_err; ?></span>
+              
+                                      <input type="submit" id="loginB" name="Login"/>
+                                      <br>
+
+                                      <hr>
+                                    
+                                      <div class="container">
+                                        <button type="button" id ="cancelLog" name="cancelLog" onclick="window.location.href='/home/joseph/NEW_PROJECT/root-files/HTML/homepage.html'" value="home" >Cancel</button>
+                                        <br>
+                                        <div>
+                                          <span><?php echo $login_err; ?></span>
+                                        </div>
+                                        <span class="psw" ><a href="balnk">forgot password? </a></span>
+                                      </div>
+                                </div>
+                                <div class="downpane"><button type="button" id ="cancelLog" name="cancelLog" onclick="window.location.href='/home/joseph/NEW_PROJECT/root-files/HTML/indix_signup.html'" value="Signup" >Signup</button></div>
+                                
+                                
+                </div>
+              
+                
+              </form>
+          
+          </div>
+
+         
+</body>
+
+<footer>
+</footer>
